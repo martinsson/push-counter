@@ -1,0 +1,13 @@
+version: 1.0
+runtime: corretto11
+build:
+  commands:
+    build:
+      - mvn clean compile
+run:
+  runtime-version: 11.0.13.08.1
+  command: mvn exec:java
+  network:
+    port: 4567
+
+
